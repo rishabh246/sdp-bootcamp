@@ -7,12 +7,38 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/mainName"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="356dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="223dp"
+        android:text="@string/app_name"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/mainGoButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="@string/app_name"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/mainGoButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="159dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginBottom="84dp"
+        android:text="@string/button"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.575"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainName"
+        tools:text="@string/button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
